@@ -3,26 +3,23 @@
 <head> 
 </head> 
 <body>
-	<style type='text/css'>
-              .embeddedServiceHelpButton .helpButton .uiButton {
-                background-color: #FFA400;
-            }
-              .embeddedServiceHelpButton .helpButton {
-                margin: 0 15px 25px 0;
-	        background-color: #FFA400;
-            }
-             .embeddedServiceLiveAgentStateChatAvatar.isLightningOutContext .agentIconColor0 {
-                background-color: #84bd00;
-            }
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #ECC248;
+		font-family: "Georgia", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #ECC248;
+	}
 </style>
-<h1>YCB Plus Live Chat Test Page</h1>
+<h1>YBC Plus Live Chat Testing</h1>
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
 
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.defaultMinimizedText = "Chat with an Agent"; //(Defaults to Chat with an Expert)
 		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
 
 		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
@@ -67,6 +64,6 @@
 	} else {
 		initESW('https://service.force.com');
 	}
-</script>
+</script>	
 </body>
 </html>
