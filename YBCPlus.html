@@ -37,6 +37,15 @@
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
+		embedded_svc.settings.extraPrechatInfo = [
+	            {
+	                entityName: 'LiveChatTranscript',
+	                showOnCreate: true,
+	                saveToTranscript: 'RecordTypeId',
+	                value: '012Hs000000xpfnIAA' // Replace with your desired RecordTypeId
+	            }
+	        ];
+
 		embedded_svc.init(
 			'https://force-connect-2803.my.salesforce.com',
 			'https://force-connect-2803.my.salesforce-sites.com/',
