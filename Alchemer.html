@@ -10,11 +10,10 @@
 
 <script type="text/javascript">
  var form = 'PARDOT_FORM_URL';
- var params = window.location.href;
  var thisScript = document.scripts[document.scripts.length - 1];
  var iframe = document.createElement('iframe');
 
- iframe.setAttribute('src', form + "?Last_referring_site=" + params);
+ iframe.setAttribute('src', form + "?Last_referring_site=hardcoded");
  console.log(iframe.src);
  iframe.setAttribute('width', '100%');
  iframe.setAttribute('height', 500);
