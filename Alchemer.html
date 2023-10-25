@@ -13,7 +13,7 @@
  var thisScript = document.scripts[document.scripts.length - 1];
  var iframe = document.createElement('iframe');
 
- var URL = form + "?Last_referring_site=hardcoded";  
+ var URL = form + "?Last_referring_site=" + window.location.href;  
 
  iframe.setAttribute('src', URL);
  console.log("HERE");
