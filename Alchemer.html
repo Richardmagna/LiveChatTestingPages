@@ -9,7 +9,7 @@
  var thisScript = document.scripts[document.scripts.length - 1];
  var iframe = document.createElement('iframe');
 
- var URL = form + "?Last_referring_site=" + window.location.href;  
+ var URL = form + "?Last_referring_site=" + window.location.href  + "?Last_Page_Seen=" + window.location.host;
 
  iframe.setAttribute('src', URL);
  console.log("HERE");
