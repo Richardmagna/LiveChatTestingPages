@@ -6,7 +6,9 @@
             window.addEventListener('message', (event) => {
                 // Always check the origin here to make sure it's expected
                 if (event.origin === 'https://page-innovation-8785--developer--c.sandbox.vf.force.com' && event.data.action === 'navigate') {
+                    console.log("here1");
                     if (window.location.href === 'https://page-innovation-8785--developer--c.sandbox.vf.force.com/apex/LuggageReportRedirect') {
+                        console.log("here2");
                         window.location.href = event.data.url;
                     }
 
