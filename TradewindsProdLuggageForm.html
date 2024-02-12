@@ -7,6 +7,7 @@
                 // Always check the origin here to make sure it's expected
                 console.log('here2');
                 console.log(event.origin);
+                console.log(event.data.action);
                 if (event.origin === 'https://page-innovation-8785.lightning.force.com' && event.data.action === 'navigate') {
                     console.log("here1");
                     window.location.href = event.data.url;
